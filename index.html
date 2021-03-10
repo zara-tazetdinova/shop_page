@@ -18,7 +18,7 @@
                     <div class="open-menu">
                        <p class="browse">Browse<i class="fas fa-caret-down"></i></p>
                     <form action="#" method="post">
-                       <input type="search" placeholder="Search for Item...">
+                       <input class="header_input" type="search" placeholder="Search for Item...">
                        <button><i class="fas fa-search"></i></button>
                     </form>
                  </div>
@@ -26,7 +26,7 @@
             </div>
             <div class="header_right">
                 <img class= cart src="img/cart.svg" alt="cart">
-                <a class="my_acc" href="#">My account</a>
+                <a class="my_acc" href="#">My account<i class="fas fa-caret-down"></i></a>
                 <span class="dashicons dashicons-sort"></span>
             </div>
         </div>
@@ -73,20 +73,19 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="mega_flex">
+                        <div class="mega_flex last_menu">
                             <h3  class="mega_header">Women</h3>
                             <ul>
                                 <li class="mega_menu_item"><a class="mega_menu_link" href="#">Denim</a></li>
                                 <li class="mega_menu_item"><a class="mega_menu_link" href="#">Leggings/Pants</a></li>
                                 <li class="mega_menu_item"><a class="mega_menu_link" href="#">Accessories</a></li>
                                 <li class="mega_menu_item"><a class="mega_menu_link" href="#">Skirts/Sorts</a></li>
-                            </ul>
-                        </div>
-                        <div class="mega_box_pic">
-                        <a href="#"><img src="img/super_sale.png" alt="super_sale"></a>
+                                 <div class="mega_box_pic">
+                                <a href="#"><img src="img/super_sale.png" alt="super_sale"></a>
+                                </div>
+                             </ul>
                         </div>
                     </div>
-                </li>
                 <li class="menu_list"><a class="menu_link" href="#">Women</a></li>
                 <li class="menu_list"><a class="menu_link" href="#">Kids</a></li>
                 <li class="menu_list"><a class="menu_link" href="#">Accessories</a></li>
@@ -174,7 +173,7 @@
 				</div>
 		</div>	
         <div class="browse_all">
-            <a class="browse_all_button" href="#">Browse All Product</a>	
+            <a class="browse_all_button" href="#">Browse All Product <i class="fas fa-long-arrow-alt-right"></i></a>	
         </div>
        
 	</div>
@@ -213,6 +212,7 @@
         </div>   
     </div>
         <div class="subscribe_container">
+           <div class="subscribe_wrapper">
             <div class="subscribe_left">
                 <img class="woman_pic" src="img/person.png" alt="person">
                 <div class="subscribe_info">
@@ -220,7 +220,10 @@
                     a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
                     <h3>Bin Burhan</h3>
                     <h5>Dhaka, Bd</h5>
-                </div>  
+                </div>
+                <span class="sub_span"></span>  
+                <span class="sub_span active_span"></span>  
+                <span class="sub_span"></span>  
             </div>
              <div class="subscribe_right">
                 <h2>SUBSCRIBE </h2>
@@ -230,6 +233,7 @@
                     <button type="submit">Subscribe</button>
                  </form>
              </div>
+           </div>
          </div>
     <footer class="footer">
          <div class="footer_container">
@@ -251,32 +255,31 @@
                 <div class="company">
                     <h4 class = "footer_header" >COMPANY</h4>
                     <ul>
-                       <li><a href="#">Home</a></li>
-                       <li><a href="#">Shop</a></li>
-                       <li><a href="#">About</a></li>
-                       <li><a href="#">How It Works</a></li>
-                       <li><a href="#">Contact</a></li>
+                       <li><a class = "footer_link" href="#">Home</a></li>
+                       <li><a class = "footer_link" href="#">Shop</a></li>
+                       <li><a class = "footer_link" href="#">About</a></li>
+                       <li><a class = "footer_link" href="#">How It Works</a></li>
+                       <li><a class = "footer_link" href="#">Contact</a></li>
                     </ul>
                  </div>
                  <div class="information">
                     <h4 class = "footer_header" >INFORMATION</h4>
                     <ul>
-                       <li><a href="#">Terms & Conditions</a></li>
-                       <li><a href="#">Privacy Policy</a></li>
-                       <li><a href="#">How to Buy</a></li>
-                       <li><a href="#">How to Sell</a></li>
-            
-                       <li><a href="#">Promotion</a></li>
+                       <li><a class = "footer_link" href="#">Terms & Conditions</a></li>
+                       <li><a class = "footer_link" href="#">Privacy Policy</a></li>
+                       <li><a class = "footer_link" href="#">How to Buy</a></li>
+                       <li><a class = "footer_link" href="#">How to Sell</a></li>
+                       <li><a class = "footer_link" href="#">Promotion</a></li>
                     </ul>
                  </div>
                  <div class="shop_category">
                     <h4 class = "footer_header" >SHOP CATEGORY</h4>
                     <ul>
-                       <li><a href="#">Men</a></li>
-                       <li><a href="#">Women</a></li>
-                       <li><a href="#">Children</a></li>
-                       <li><a href="#">Apparel</a></li>
-                       <li><a href="#">Browse All</a></li>
+                       <li><a class = "footer_link" href="#">Men</a></li>
+                       <li><a class = "footer_link" href="#">Women</a></li>
+                       <li><a class = "footer_link" href="#">Children</a></li>
+                       <li><a class = "footer_link" href="#">Apparel</a></li>
+                       <li><a class = "footer_link" href="#">Browse All</a></li>
                     </ul>
                  </div>
             </div>
