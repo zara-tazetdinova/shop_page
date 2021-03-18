@@ -1109,15 +1109,29 @@ h4 {
     display: flex;
     align-items: center;
 }
-
 .cart_quantity_input {
     width: 54px;
     height: 30px;
     border: 1px solid #eaeaea;
     background-color: #ffffff;
 }
-.cart_item_content {
+.cart_column {
+    margin-right: 128px;
+}
+
+.cart_column:last-child {
+    margin-right: 15px;
+}
+.column_1 {
     margin-right: 125px;
+}
+.column_2 {
+    margin-right: 112px;
+}
+.column_4 {
+    margin-right: 130px;
+}
+.cart_item_content {
     color: #656565;
     font-family: Lato;
     font-size: 13px;
@@ -1140,7 +1154,7 @@ h4 {
     font-size: 13px;
     line-height: 20px;
     color: #575757;
-    font-weight: 400;
+    font-weight: 700;
 }
 .color_name {
     color: #6f6e6e;
