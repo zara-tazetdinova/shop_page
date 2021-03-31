@@ -317,16 +317,22 @@
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 0.5s ease;
+    height: 100%;
 }
 .big_image {
     width: 560px;
     height: 542px;
     overflow: hidden;
 }
+.small_image {
+    width: 560px;
+    height: 261px;
+}
 
 .card_image:hover {
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
+    
 }
 .card_lower_text {
     color: #f16d7f;
@@ -337,7 +343,7 @@
     margin-right: 20px;
 }
 .margin_bottom {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .featured_container {
