@@ -880,8 +880,10 @@ h4 {
 .sub_form button:focus {
     outline: none;
 }
+
+
 .sub_form button:hover {
-    color:black;
+    color: black;
     transition-duration: 0.5s;
 }
 
@@ -1356,10 +1358,12 @@ h4 {
     text-decoration: none;
     transition: 0.1s linear;
 }
+
 .single_page_button:hover {
-    background-color:#ef5b70 ;
+    background-color: #ef5b70;
     color: #fff
 }
+
 .single_page_button:hover svg path {
     fill: #fff;
 }
@@ -1665,6 +1669,7 @@ h4 {
     padding: 18px 40px;
     margin-top: 22px;
 }
+
 .proceed_button:hover {
     background-color: #fff;
     color: #f16d7f;
@@ -1735,5 +1740,4 @@ h4 {
 .social_link:hover {
     background-color: #f16d7f;
     color: #fff;
-    
 }
