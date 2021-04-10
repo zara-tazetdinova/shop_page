@@ -881,6 +881,7 @@ h4 {
     outline: none;
 }
 
+
 .sub_form button:hover {
     color: black;
     transition-duration: 0.5s;
@@ -1739,5 +1740,4 @@ h4 {
 .social_link:hover {
     background-color: #f16d7f;
     color: #fff;
-
 }
