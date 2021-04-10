@@ -131,10 +131,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.header_right .cart path {
-  fill: #E8E8E8;
+  position: relative;
 }
 
 .header_left {
@@ -151,15 +148,26 @@ body {
   margin-left: 20px;
 }
 
+.number_in_cart {
+  position: absolute;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 14px;
+  padding: 4px 8px;
+  background: #f16d7f;
+  top: -13px;
+  left: 130px;
+}
+
 .promo {
   background-color: #F1E4E6;
 }
 
 .promo_wrap {
-  background: url(../img_adapt/top_bg.png) no-repeat bottom left;
-  height: 764px;
-  background-size: auto;
-  background-position: -195px;
+  background: url(../img_adapt/top_bg.png) no-repeat bottom;
+  height: 768px;
+  background-position: -210px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,32 +177,39 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 .promo_title {
   text-transform: uppercase;
   position: relative;
   margin-left: 12px;
-  margin-right: 30px;
-}
-
-.promo_title::before {
-  font-weight: 900;
-  content: "";
-  position: absolute;
-  left: -25px;
-  bottom: 1px;
-  display: block;
-  width: 12px;
-  height: 92px;
-  background: #f16d7f;
-}
-
-.promo .title1 {
+  margin-right: 50px;
   color: #222222;
   font-size: 44px;
   font-weight: 900;
   letter-spacing: 1.5px;
+  -webkit-animation: 1.5s text_anim linear forwards;
+          animation: 1.5s text_anim linear forwards;
+  right: -50%;
+}
+
+@-webkit-keyframes text_anim {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0%;
+  }
+}
+
+@keyframes text_anim {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0%;
+  }
 }
 
 .promo .title2 {
@@ -208,6 +223,18 @@ body {
   color: #f16d7f;
   font-size: 30px;
   font-weight: 700;
+}
+
+.promo_title::before {
+  font-weight: 900;
+  content: "";
+  position: absolute;
+  left: -25px;
+  bottom: 1px;
+  display: block;
+  width: 12px;
+  height: 92px;
+  background: #f16d7f;
 }
 
 .categories {
@@ -255,7 +282,7 @@ body {
 
 .categories .category span {
   color: #f16d7f;
-  font-size: 30px;
+  font-size: 24px;
   letter-spacing: 0.75px;
 }
 
@@ -632,31 +659,47 @@ body {
   color: #fff;
 }
 
-@media (max-width: 930px) {
-  .promo_title {
-    font-size: 30px;
+@media (max-width: 1000px) {
+  .promo_wrap {
+    height: 650px;
+    background-position: -175px bottom;
+    background-size: 671px;
   }
-  .title1 {
+}
+
+@media (max-width: 900px) {
+  .promo__wrap {
+    height: 600px;
+    background-position: -120px bottom;
+    background-size: 620px;
+  }
+  .promo_title {
     font-size: 40px;
   }
-  .title2 {
+  .promo_title .title2 {
     font-size: 26px;
   }
-  .title3 {
+  .promo_title .title3 {
     font-size: 26px;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 800px) {
+  .promo__wrap {
+    height: 368px;
+    background-position: left bottom;
+    background-size: 382px;
+  }
   .categories_wrap {
-    -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    -ms-grid-rows: 250px 150px;
-        grid-template-rows: 250px 150px;
+    -ms-grid-columns: (minmax(215px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+    -ms-grid-rows: 215px 130px;
+        grid-template-rows: 215px 130px;
+    gap: 16px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 760px) {
   .advantages_wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -705,17 +748,6 @@ body {
   .social_link {
     margin: 10px;
   }
-  .promo_wrap {
-    background: none;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 375px;
-  }
-  .promo_title {
-    font-size: 25px;
-    margin-right: 0;
-  }
   .menu_mobile {
     display: none;
   }
@@ -730,5 +762,25 @@ body {
   }
   .subscribe_form {
     padding-bottom: 130px;
+  }
+  .promo_wrap {
+    background: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 380px;
+  }
+  .promo_title::before {
+    height: 70px;
+  }
+  .promo_title {
+    font-size: 36px;
+    margin-right: 0;
+  }
+  .promo_title .title2 {
+    font-size: 18px;
+  }
+  .promo_title .title3 {
+    font-size: 18px;
   }
 }
