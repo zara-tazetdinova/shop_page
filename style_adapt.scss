@@ -142,8 +142,9 @@ body {
 
     }
 }
+
 .number_in_cart {
-    position: absolute;   
+    position: absolute;
     border-radius: 50%;
     font-size: 12px;
     color: #ffffff;
@@ -151,7 +152,7 @@ body {
     padding: 4px 8px;
     background: $pink;
     top: -13px;
-    left: 130px; 
+    left: 130px;
 }
 
 .promo {
@@ -178,30 +179,31 @@ body {
         letter-spacing: 1.5px;
         animation: 1.5s text_anim linear forwards;
         right: -50%;
+    }
+
+    @keyframes text_anim {
+        from {
+            right: -100%;
         }
 
-        @keyframes text_anim {
-            from {
-                right: -100%;
-            }
-            to {
-                right: 0%;
-            }
+        to {
+            right: 0%;
         }
-        
-        .title2 {
-            letter-spacing: 1px;
-            font-size: 30px;
-            font-weight: 700;
-        }
+    }
 
-        .title3 {
-            letter-spacing: 1px;
-            color: #f16d7f;
-            font-size: 30px;
-            font-weight: 700;
-        }
-    
+    .title2 {
+        letter-spacing: 1px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .title3 {
+        letter-spacing: 1px;
+        color: #f16d7f;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
 
     &_title::before {
         font-weight: 900;
@@ -228,55 +230,53 @@ body {
         grid-row-gap: 20px;
         justify-content: center;
         cursor: pointer;
-
     }
+}
+.category {
+    display: flex;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.5s ease;
 
-    .category {
-        display: flex;
-        color: #fff;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 0.45px;
-        font-size: 16px;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        flex-direction: column;
-        transition: all 0.5s ease;
-
-        span {
-            color: #f16d7f;
-            font-size: 24px;
-            letter-spacing: 0.75px;
-        }
+    span {
+        color: #f16d7f;
+        font-size: 24px;
+        letter-spacing: 0.75px;
     }
+}
 
-    .category-woman {
-        background-image: url(../img_adapt/card2.png);
-        background-repeat: no-repeat;
-    }
+.category-woman {
+    background-image: url(../img_adapt/card2.png);
+    background-repeat: no-repeat;
+}
 
-    .category-man {
-        background-image: url(../img_adapt/card1.png);
-        background-repeat: no-repeat;
+.category-man {
+    background-image: url(../img_adapt/card1.png);
+    background-repeat: no-repeat;
 
-    }
+}
 
-    .category-kids {
-        background-image: url(../img_adapt/card3.png);
-        background-repeat: no-repeat;
-    }
+.category-kids {
+    background-image: url(../img_adapt/card3.png);
+    background-repeat: no-repeat;
+}
 
-    .category-acc {
-        background-image: url(../img_adapt/card4.png);
-        background-repeat: no-repeat;
-        grid-column: 1/4;
-    }
+.category-acc {
+    background-image: url(../img_adapt/card4.png);
+    background-repeat: no-repeat;
+    grid-column: 1/4;
+}
 
-    .category:hover {
-        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
-        transform: scale(1.05);
-    }
+.category:hover {
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
 }
 
 
